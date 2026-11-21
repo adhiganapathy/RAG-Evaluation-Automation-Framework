@@ -1,0 +1,16 @@
+[
+  {
+    "test_id": "AGT_001",
+    "scenario": "Multi-turn plan comparison context retention",
+    "turns": [
+      {
+        "user_message": "What is the refund window for Enterprise plans?",
+        "expected_contains": ["30"]
+      },
+      {
+        "user_message": "And what about Standard Monthly plans?",
+        "expected_contains": ["7"]
+      }
+    ]
+  }
+]

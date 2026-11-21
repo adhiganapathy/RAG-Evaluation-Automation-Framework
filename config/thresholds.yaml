@@ -1,0 +1,18 @@
+rag:
+  faithfulness: 0.80
+  answer_relevancy: 0.70
+  retrieval_similarity: 0.50
+  max_latency_sec: 15.0
+  hallucination_max: 0.30          # Lower is better (0.0 = zero hallucination)
+  contextual_precision: 0.70       # Top-ranked chunks must be relevant
+  contextual_recall: 0.70          # All needed facts must be retrieved
+  max_response_words: 150
+
+security:
+  pii_confidence_cutoff: 0.70
+  allowed_leaks: 0
+  toxicity_max: 0.20
+  bias_max: 0.20
+
+agent:
+  conversation_completeness: 0.75

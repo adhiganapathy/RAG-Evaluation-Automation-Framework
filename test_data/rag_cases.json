@@ -1,0 +1,32 @@
+[
+  {
+    "test_id": "RAG_001",
+    "description": "Verify Enterprise refund window and P1 SLA faithfulness",
+    "query": "What is the refund window for Enterprise Plan customers, and what is the P1 SLA?",
+    "expected_output": "Enterprise Plan customers have a 30-day refund window from the invoice date, and P1 critical incidents have a 15-minute response SLA.",
+    "expected_keywords": ["30", "15"],
+    "require_citations": true,
+    "evaluate_faithfulness": true,
+    "is_out_of_scope": false
+  },
+  {
+    "test_id": "RAG_002",
+    "description": "Verify domestic courier and shipping SLA",
+    "query": "How fast do domestic orders ship within India and via which courier?",
+    "expected_output": "Domestic orders within India ship within 24 hours via BlueDart.",
+    "expected_keywords": ["24", "BlueDart"],
+    "require_citations": false,
+    "evaluate_faithfulness": true,
+    "is_out_of_scope": false
+  },
+  {
+    "test_id": "RAG_003",
+    "description": "Out-of-scope query hallucination check",
+    "query": "What is Acme Corp's cryptocurrency refund policy for Mars colonies?",
+    "expected_output": "The provided context does not contain information about a cryptocurrency refund policy for Mars colonies.",
+    "expected_keywords": [],
+    "require_citations": false,
+    "evaluate_faithfulness": true,
+    "is_out_of_scope": true
+  }
+]

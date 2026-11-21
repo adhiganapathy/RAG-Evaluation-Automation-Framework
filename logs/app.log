@@ -1,0 +1,1557 @@
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: None[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: None[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: None[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: None[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:05:37 - [32mINFO[0m - Started server process [43044][0m
+2026-11-20 10:05:37 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:05:37 - [31mERROR[0m - Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 25, in lifespan
+    r2r_app = await create_r2r_app(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 53, in create_r2r_app
+    config = R2RConfig.load(config_name=config_name, config_path=config_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 200, in load
+    return cls.from_toml(config_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 142, in from_toml
+    with open(config_path) as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'my_ollama.toml'
+[0m
+2026-11-20 10:05:37 - [31mERROR[0m - Application startup failed. Exiting.[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r_default[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat-pooler.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:09:26 - [32mINFO[0m - Started server process [46392][0m
+2026-11-20 10:09:26 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:09:26 - [31mERROR[0m - Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 25, in lifespan
+    r2r_app = await create_r2r_app(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 53, in create_r2r_app
+    config = R2RConfig.load(config_name=config_name, config_path=config_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 200, in load
+    return cls.from_toml(config_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 145, in from_toml
+    return cls(config_data)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 106, in __init__
+    self.app = AppConfig.create(**self.app)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\base\providers\base.py", line 26, in create
+    instance.extra_fields[k] = v
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\pydantic\main.py", line 1110, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'AppConfig' object has no attribute 'extra_fields'
+[0m
+2026-11-20 10:09:26 - [31mERROR[0m - Application startup failed. Exiting.[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r-db[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat-pooler.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:11:45 - [32mINFO[0m - Started server process [35052][0m
+2026-11-20 10:11:45 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:11:45 - [31mERROR[0m - Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 25, in lifespan
+    r2r_app = await create_r2r_app(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 53, in create_r2r_app
+    config = R2RConfig.load(config_name=config_name, config_path=config_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 200, in load
+    return cls.from_toml(config_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 145, in from_toml
+    return cls(config_data)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\config.py", line 106, in __init__
+    self.app = AppConfig.create(**self.app)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\base\providers\base.py", line 26, in create
+    instance.extra_fields[k] = v
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\pydantic\main.py", line 1110, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'AppConfig' object has no attribute 'extra_fields'
+[0m
+2026-11-20 10:11:45 - [31mERROR[0m - Application startup failed. Exiting.[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r-db[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Started server process [34844][0m
+2026-11-20 10:15:57 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Initializing EmbeddingProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='ollama' base_model='mxbai-embed-large' base_dimension=1024 rerank_model=None rerank_url=None batch_size=128 prefixes=None add_title_as_prefix=True concurrent_request_limit=2 max_retries=3 initial_backoff=1 max_backoff=64.0 quantization_settings=VectorQuantizationSettings(quantization_type=<VectorQuantizationType.FP32: 'FP32'>) rerank_dimension=None rerank_transformer_type=None.[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Using Ollama API base URL: http://localhost:11434[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Initializing CompletionProvider with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='litellm' generation_config=GenerationConfig(model='ollama/llama3.1', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs={}, api_base=None, response_format=None) concurrent_request_limit=1 fast_llm='ollama/llama3.1' max_retries=3 initial_backoff=1.0 max_backoff=64.0[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Initializing BcryptCryptoProvider[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Initializing DatabaseProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='postgres' user=None password=None host=None port=None db_name=None project_name=None postgres_configuration_settings=None default_collection_name='Default' default_collection_description='Your default collection.' collection_summary_system_prompt='default_system' collection_summary_task_prompt='default_collection_summary' enable_fts=False batch_size=256 kg_store_path=None graph_enrichment_settings=KGEnrichmentSettings(force_kg_enrichment=False, graphrag_communities='graphrag_communities', max_summary_input_length=65536, generation_config=GenerationConfig(model='ollama/llama3.1', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), leiden_params={}) graph_creation_settings=KGCreationSettings(clustering_mode='local', graphrag_relationships_extraction_few_shot='graphrag_relationships_extraction_few_shot', graph_entity_description_prompt='graphrag_entity_description', entity_types=[], relation_types=[], chunk_merge_count=2, max_knowledge_relationships=100, max_description_input_length=65536, generation_config=GenerationConfig(model='ollama/llama3.1', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), automatic_deduplication=False) graph_search_settings=GraphSearchSettings(generation_config=GenerationConfig(model='ollama/llama3.1', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), graphrag_map_system='graphrag_map_system', graphrag_reduce_system='graphrag_reduce_system', max_community_description_length=65536, max_llm_queries_for_global_search=250, limits={}, enabled=True) limits=LimitSettings(global_per_min=300, route_per_min=None, monthly_limit=10000) route_limits={'/v3/retrieval/search': LimitSettings(global_per_min=None, route_per_min=120, monthly_limit=None), '/v3/retrieval/rag': LimitSettings(global_per_min=None, route_per_min=30, monthly_limit=None)} user_limits={}.[0m
+2026-11-20 10:15:57 - [32mINFO[0m - Connecting to Postgres via TCP/IP[0m
+2026-11-20 10:15:58 - [32mINFO[0m - Initializing `PostgresDatabaseProvider`.[0m
+2026-11-20 10:15:58 - [32mINFO[0m - Connecting with 230 connections to `asyncpg.create_pool`.[0m
+2026-11-20 10:16:04 - [32mINFO[0m - Successfully connected to Postgres database and created connection pool.[0m
+2026-11-20 10:16:06 - [32mINFO[0m - Creating table, if not exists: r2r-db.documents[0m
+2026-11-20 10:16:06 - [33mWARNING[0m - Error syntax error at or near "-" when creating document table.[0m
+2026-11-20 10:16:06 - [31mERROR[0m - Error syntax error at or near "-" while creating R2RProviders.[0m
+2026-11-20 10:16:06 - [31mERROR[0m - Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 25, in lifespan
+    r2r_app = await create_r2r_app(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 65, in create_r2r_app
+    return await builder.build()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 44, in build
+    providers = await self._create_providers(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 116, in _create_providers
+    return await factory.create_providers(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 312, in create_providers
+    or await self.create_database_provider(
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 180, in create_database_provider
+    await database_provider.initialize()
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\postgres.py", line 217, in initialize
+    await self.documents_handler.create_tables()
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\documents.py", line 157, in create_tables
+    raise e
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\documents.py", line 86, in create_tables
+    await self.connection_manager.execute_query(query)
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\base.py", line 174, in execute_query
+    return await conn.execute(query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\asyncpg\connection.py", line 350, in execute
+    result = await self._protocol.query(query, timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\protocol\protocol.pyx", line 374, in query
+asyncpg.exceptions.PostgresSyntaxError: syntax error at or near "-"
+[0m
+2026-11-20 10:16:06 - [31mERROR[0m - Application startup failed. Exiting.[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r_db[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Started server process [13352][0m
+2026-11-20 10:23:48 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Initializing EmbeddingProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='ollama' base_model='nomic-embed-text' base_dimension=768 rerank_model=None rerank_url=None batch_size=128 prefixes=None add_title_as_prefix=True concurrent_request_limit=2 max_retries=3 initial_backoff=1 max_backoff=64.0 quantization_settings=VectorQuantizationSettings(quantization_type=<VectorQuantizationType.FP32: 'FP32'>) rerank_dimension=None rerank_transformer_type=None.[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Using Ollama API base URL: http://localhost:11434[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Initializing CompletionProvider with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='litellm' generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs={}, api_base=None, response_format=None) concurrent_request_limit=1 fast_llm='ollama/gemma2:2b' max_retries=3 initial_backoff=1.0 max_backoff=64.0[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Initializing BcryptCryptoProvider[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Initializing DatabaseProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='postgres' user=None password=None host=None port=None db_name=None project_name=None postgres_configuration_settings=None default_collection_name='Default' default_collection_description='Your default collection.' collection_summary_system_prompt='default_system' collection_summary_task_prompt='default_collection_summary' enable_fts=False batch_size=256 kg_store_path=None graph_enrichment_settings=KGEnrichmentSettings(force_kg_enrichment=False, graphrag_communities='graphrag_communities', max_summary_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), leiden_params={}) graph_creation_settings=KGCreationSettings(clustering_mode='local', graphrag_relationships_extraction_few_shot='graphrag_relationships_extraction_few_shot', graph_entity_description_prompt='graphrag_entity_description', entity_types=[], relation_types=[], chunk_merge_count=2, max_knowledge_relationships=100, max_description_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), automatic_deduplication=False) graph_search_settings=GraphSearchSettings(generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), graphrag_map_system='graphrag_map_system', graphrag_reduce_system='graphrag_reduce_system', max_community_description_length=65536, max_llm_queries_for_global_search=250, limits={}, enabled=True) limits=LimitSettings(global_per_min=300, route_per_min=None, monthly_limit=10000) route_limits={'/v3/retrieval/search': LimitSettings(global_per_min=None, route_per_min=120, monthly_limit=None), '/v3/retrieval/rag': LimitSettings(global_per_min=None, route_per_min=30, monthly_limit=None)} user_limits={}.[0m
+2026-11-20 10:23:48 - [32mINFO[0m - Connecting to Postgres via TCP/IP[0m
+2026-11-20 10:23:49 - [32mINFO[0m - Initializing `PostgresDatabaseProvider`.[0m
+2026-11-20 10:23:49 - [32mINFO[0m - Connecting with 230 connections to `asyncpg.create_pool`.[0m
+2026-11-20 10:23:54 - [32mINFO[0m - Successfully connected to Postgres database and created connection pool.[0m
+2026-11-20 10:23:56 - [32mINFO[0m - Creating table, if not exists: r2r_db.documents[0m
+2026-11-20 10:24:07 - [32mINFO[0m - Loading prompts from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts[0m
+2026-11-20 10:24:07 - [32mINFO[0m - Loading default prompt: chunk_enrichment from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\chunk_enrichment.yaml.[0m
+2026-11-20 10:24:09 - [32mINFO[0m - Loading default prompt: default_collection_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_collection_summary.yaml.[0m
+2026-11-20 10:24:10 - [32mINFO[0m - Loading default prompt: default_rag from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_rag.yaml.[0m
+2026-11-20 10:24:11 - [32mINFO[0m - Loading default prompt: default_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_summary.yaml.[0m
+2026-11-20 10:24:12 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_system.yaml.[0m
+2026-11-20 10:24:13 - [32mINFO[0m - Loading default prompt: extended_rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\extended_rag_agent.yaml.[0m
+2026-11-20 10:24:14 - [32mINFO[0m - Loading default prompt: graphrag_communities from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_communities.yaml.[0m
+2026-11-20 10:24:15 - [32mINFO[0m - Loading default prompt: graphrag_entity_description from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_entity_description.yaml.[0m
+2026-11-20 10:24:17 - [32mINFO[0m - Loading default prompt: graphrag_map_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_map_system.yaml.[0m
+2026-11-20 10:24:18 - [32mINFO[0m - Loading default prompt: graphrag_reduce_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_reduce_system.yaml.[0m
+2026-11-20 10:24:19 - [32mINFO[0m - Loading default prompt: graphrag_relationships_extraction_few_shot from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_relationships_extraction_few_shot.yaml.[0m
+2026-11-20 10:24:20 - [32mINFO[0m - Loading default prompt: hyde from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\hyde.yaml.[0m
+2026-11-20 10:24:21 - [32mINFO[0m - Loading default prompt: rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_agent.yaml.[0m
+2026-11-20 10:24:22 - [32mINFO[0m - Loading default prompt: rag_fusion from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_fusion.yaml.[0m
+2026-11-20 10:24:23 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\system_with_date.yaml.[0m
+2026-11-20 10:24:23 - [32mINFO[0m - Prompt 'default_system' differs from existing but overwrite_on_diff=False. Skipping update.[0m
+2026-11-20 10:24:23 - [32mINFO[0m - Loading default prompt: vision_img from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_img.yaml.[0m
+2026-11-20 10:24:24 - [32mINFO[0m - Loading default prompt: vision_pdf from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_pdf.yaml.[0m
+2026-11-20 10:24:33 - [32mINFO[0m - Initializing text splitter with method: ChunkingStrategy.RECURSIVE[0m
+2026-11-20 10:24:33 - [31mERROR[0m - Error Error: 'olefile' is required to run DOCParser. Please install it using pip: pip install olefile while creating R2RProviders.[0m
+2026-11-20 10:24:33 - [31mERROR[0m - Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\parsers\media\doc_parser.py", line 28, in __init__
+    import olefile
+ModuleNotFoundError: No module named 'olefile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 25, in lifespan
+    r2r_app = await create_r2r_app(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 65, in create_r2r_app
+    return await builder.build()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 44, in build
+    providers = await self._create_providers(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 116, in _create_providers
+    return await factory.create_providers(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 319, in create_providers
+    or self.create_ingestion_provider(
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 121, in create_ingestion_provider
+    return R2RIngestionProvider(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\ingestion\r2r\base.py", line 103, in __init__
+    self._initialize_parsers()
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\ingestion\r2r\base.py", line 113, in _initialize_parsers
+    self.parsers[doc_type] = parser(
+                             ^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\parsers\media\doc_parser.py", line 32, in __init__
+    raise ImportError(
+ImportError: Error: 'olefile' is required to run DOCParser. Please install it using pip: pip install olefile
+[0m
+2026-11-20 10:24:33 - [31mERROR[0m - Application startup failed. Exiting.[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r_db[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Started server process [40356][0m
+2026-11-20 10:27:02 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Initializing EmbeddingProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='ollama' base_model='nomic-embed-text' base_dimension=768 rerank_model=None rerank_url=None batch_size=128 prefixes=None add_title_as_prefix=True concurrent_request_limit=2 max_retries=3 initial_backoff=1 max_backoff=64.0 quantization_settings=VectorQuantizationSettings(quantization_type=<VectorQuantizationType.FP32: 'FP32'>) rerank_dimension=None rerank_transformer_type=None.[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Using Ollama API base URL: http://localhost:11434[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Initializing CompletionProvider with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='litellm' generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs={}, api_base=None, response_format=None) concurrent_request_limit=1 fast_llm='ollama/gemma2:2b' max_retries=3 initial_backoff=1.0 max_backoff=64.0[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Initializing BcryptCryptoProvider[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Initializing DatabaseProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='postgres' user=None password=None host=None port=None db_name=None project_name=None postgres_configuration_settings=None default_collection_name='Default' default_collection_description='Your default collection.' collection_summary_system_prompt='default_system' collection_summary_task_prompt='default_collection_summary' enable_fts=False batch_size=256 kg_store_path=None graph_enrichment_settings=KGEnrichmentSettings(force_kg_enrichment=False, graphrag_communities='graphrag_communities', max_summary_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), leiden_params={}) graph_creation_settings=KGCreationSettings(clustering_mode='local', graphrag_relationships_extraction_few_shot='graphrag_relationships_extraction_few_shot', graph_entity_description_prompt='graphrag_entity_description', entity_types=[], relation_types=[], chunk_merge_count=2, max_knowledge_relationships=100, max_description_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), automatic_deduplication=False) graph_search_settings=GraphSearchSettings(generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), graphrag_map_system='graphrag_map_system', graphrag_reduce_system='graphrag_reduce_system', max_community_description_length=65536, max_llm_queries_for_global_search=250, limits={}, enabled=True) limits=LimitSettings(global_per_min=300, route_per_min=None, monthly_limit=10000) route_limits={'/v3/retrieval/search': LimitSettings(global_per_min=None, route_per_min=120, monthly_limit=None), '/v3/retrieval/rag': LimitSettings(global_per_min=None, route_per_min=30, monthly_limit=None)} user_limits={}.[0m
+2026-11-20 10:27:02 - [32mINFO[0m - Connecting to Postgres via TCP/IP[0m
+2026-11-20 10:27:04 - [32mINFO[0m - Initializing `PostgresDatabaseProvider`.[0m
+2026-11-20 10:27:04 - [32mINFO[0m - Connecting with 230 connections to `asyncpg.create_pool`.[0m
+2026-11-20 10:27:08 - [32mINFO[0m - Successfully connected to Postgres database and created connection pool.[0m
+2026-11-20 10:27:09 - [32mINFO[0m - Creating table, if not exists: r2r_db.documents[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: chunk_enrichment[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: default_collection_summary[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: default_rag[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: default_summary[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: default_system[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: extended_rag_agent[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: graphrag_communities[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: graphrag_entity_description[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: graphrag_map_system[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: graphrag_reduce_system[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: graphrag_relationships_extraction_few_shot[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: hyde[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: rag_agent[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: rag_fusion[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: vision_img[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading saved prompt: vision_pdf[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading prompts from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts[0m
+2026-11-20 10:27:19 - [32mINFO[0m - Loading default prompt: chunk_enrichment from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\chunk_enrichment.yaml.[0m
+2026-11-20 10:27:20 - [32mINFO[0m - Loading default prompt: default_collection_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_collection_summary.yaml.[0m
+2026-11-20 10:27:22 - [32mINFO[0m - Loading default prompt: default_rag from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_rag.yaml.[0m
+2026-11-20 10:27:23 - [32mINFO[0m - Loading default prompt: default_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_summary.yaml.[0m
+2026-11-20 10:27:24 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_system.yaml.[0m
+2026-11-20 10:27:25 - [32mINFO[0m - Loading default prompt: extended_rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\extended_rag_agent.yaml.[0m
+2026-11-20 10:27:26 - [32mINFO[0m - Loading default prompt: graphrag_communities from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_communities.yaml.[0m
+2026-11-20 10:27:27 - [32mINFO[0m - Loading default prompt: graphrag_entity_description from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_entity_description.yaml.[0m
+2026-11-20 10:27:28 - [32mINFO[0m - Loading default prompt: graphrag_map_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_map_system.yaml.[0m
+2026-11-20 10:27:29 - [32mINFO[0m - Loading default prompt: graphrag_reduce_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_reduce_system.yaml.[0m
+2026-11-20 10:27:30 - [32mINFO[0m - Loading default prompt: graphrag_relationships_extraction_few_shot from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_relationships_extraction_few_shot.yaml.[0m
+2026-11-20 10:27:32 - [32mINFO[0m - Loading default prompt: hyde from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\hyde.yaml.[0m
+2026-11-20 10:27:33 - [32mINFO[0m - Loading default prompt: rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_agent.yaml.[0m
+2026-11-20 10:27:34 - [32mINFO[0m - Loading default prompt: rag_fusion from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_fusion.yaml.[0m
+2026-11-20 10:27:35 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\system_with_date.yaml.[0m
+2026-11-20 10:27:35 - [32mINFO[0m - Prompt 'default_system' differs from existing but overwrite_on_diff=False. Skipping update.[0m
+2026-11-20 10:27:35 - [32mINFO[0m - Loading default prompt: vision_img from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_img.yaml.[0m
+2026-11-20 10:27:36 - [32mINFO[0m - Loading default prompt: vision_pdf from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_pdf.yaml.[0m
+2026-11-20 10:27:47 - [32mINFO[0m - Initializing text splitter with method: ChunkingStrategy.RECURSIVE[0m
+2026-11-20 10:27:47 - [31mERROR[0m - Error Error: 'epub' is required to run EPUBParser. Please install it using pip: pip install epub while creating R2RProviders.[0m
+2026-11-20 10:27:47 - [31mERROR[0m - Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\parsers\structured\epub_parser.py", line 29, in __init__
+    import epub
+ModuleNotFoundError: No module named 'epub'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 25, in lifespan
+    r2r_app = await create_r2r_app(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 65, in create_r2r_app
+    return await builder.build()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 44, in build
+    providers = await self._create_providers(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 116, in _create_providers
+    return await factory.create_providers(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 319, in create_providers
+    or self.create_ingestion_provider(
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 121, in create_ingestion_provider
+    return R2RIngestionProvider(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\ingestion\r2r\base.py", line 103, in __init__
+    self._initialize_parsers()
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\ingestion\r2r\base.py", line 113, in _initialize_parsers
+    self.parsers[doc_type] = parser(
+                             ^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\parsers\structured\epub_parser.py", line 33, in __init__
+    raise ImportError(
+ImportError: Error: 'epub' is required to run EPUBParser. Please install it using pip: pip install epub
+[0m
+2026-11-20 10:27:47 - [31mERROR[0m - Application startup failed. Exiting.[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r_db[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Started server process [18344][0m
+2026-11-20 10:31:44 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Initializing EmbeddingProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='ollama' base_model='nomic-embed-text' base_dimension=768 rerank_model=None rerank_url=None batch_size=128 prefixes=None add_title_as_prefix=True concurrent_request_limit=2 max_retries=3 initial_backoff=1 max_backoff=64.0 quantization_settings=VectorQuantizationSettings(quantization_type=<VectorQuantizationType.FP32: 'FP32'>) rerank_dimension=None rerank_transformer_type=None.[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Using Ollama API base URL: http://localhost:11434[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Initializing CompletionProvider with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='litellm' generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs={}, api_base=None, response_format=None) concurrent_request_limit=1 fast_llm='ollama/gemma2:2b' max_retries=3 initial_backoff=1.0 max_backoff=64.0[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Initializing BcryptCryptoProvider[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Initializing DatabaseProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='postgres' user=None password=None host=None port=None db_name=None project_name=None postgres_configuration_settings=None default_collection_name='Default' default_collection_description='Your default collection.' collection_summary_system_prompt='default_system' collection_summary_task_prompt='default_collection_summary' enable_fts=False batch_size=256 kg_store_path=None graph_enrichment_settings=KGEnrichmentSettings(force_kg_enrichment=False, graphrag_communities='graphrag_communities', max_summary_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), leiden_params={}) graph_creation_settings=KGCreationSettings(clustering_mode='local', graphrag_relationships_extraction_few_shot='graphrag_relationships_extraction_few_shot', graph_entity_description_prompt='graphrag_entity_description', entity_types=[], relation_types=[], chunk_merge_count=2, max_knowledge_relationships=100, max_description_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), automatic_deduplication=False) graph_search_settings=GraphSearchSettings(generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), graphrag_map_system='graphrag_map_system', graphrag_reduce_system='graphrag_reduce_system', max_community_description_length=65536, max_llm_queries_for_global_search=250, limits={}, enabled=True) limits=LimitSettings(global_per_min=300, route_per_min=None, monthly_limit=10000) route_limits={'/v3/retrieval/search': LimitSettings(global_per_min=None, route_per_min=120, monthly_limit=None), '/v3/retrieval/rag': LimitSettings(global_per_min=None, route_per_min=30, monthly_limit=None)} user_limits={}.[0m
+2026-11-20 10:31:44 - [32mINFO[0m - Connecting to Postgres via TCP/IP[0m
+2026-11-20 10:31:45 - [32mINFO[0m - Initializing `PostgresDatabaseProvider`.[0m
+2026-11-20 10:31:45 - [32mINFO[0m - Connecting with 230 connections to `asyncpg.create_pool`.[0m
+2026-11-20 10:31:50 - [32mINFO[0m - Successfully connected to Postgres database and created connection pool.[0m
+2026-11-20 10:31:52 - [32mINFO[0m - Creating table, if not exists: r2r_db.documents[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: chunk_enrichment[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: default_rag[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: default_summary[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: default_system[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: graphrag_communities[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: graphrag_map_system[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: graphrag_reduce_system[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: graphrag_relationships_extraction_few_shot[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: hyde[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: rag_agent[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: rag_fusion[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: vision_img[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: default_collection_summary[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: extended_rag_agent[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: graphrag_entity_description[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading saved prompt: vision_pdf[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading prompts from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts[0m
+2026-11-20 10:32:03 - [32mINFO[0m - Loading default prompt: chunk_enrichment from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\chunk_enrichment.yaml.[0m
+2026-11-20 10:32:05 - [32mINFO[0m - Loading default prompt: default_collection_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_collection_summary.yaml.[0m
+2026-11-20 10:32:06 - [32mINFO[0m - Loading default prompt: default_rag from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_rag.yaml.[0m
+2026-11-20 10:32:07 - [32mINFO[0m - Loading default prompt: default_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_summary.yaml.[0m
+2026-11-20 10:32:09 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_system.yaml.[0m
+2026-11-20 10:32:10 - [32mINFO[0m - Loading default prompt: extended_rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\extended_rag_agent.yaml.[0m
+2026-11-20 10:32:12 - [32mINFO[0m - Loading default prompt: graphrag_communities from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_communities.yaml.[0m
+2026-11-20 10:32:13 - [32mINFO[0m - Loading default prompt: graphrag_entity_description from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_entity_description.yaml.[0m
+2026-11-20 10:32:15 - [32mINFO[0m - Loading default prompt: graphrag_map_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_map_system.yaml.[0m
+2026-11-20 10:32:16 - [32mINFO[0m - Loading default prompt: graphrag_reduce_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_reduce_system.yaml.[0m
+2026-11-20 10:32:17 - [32mINFO[0m - Loading default prompt: graphrag_relationships_extraction_few_shot from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_relationships_extraction_few_shot.yaml.[0m
+2026-11-20 10:32:18 - [32mINFO[0m - Loading default prompt: hyde from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\hyde.yaml.[0m
+2026-11-20 10:32:20 - [32mINFO[0m - Loading default prompt: rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_agent.yaml.[0m
+2026-11-20 10:32:21 - [32mINFO[0m - Loading default prompt: rag_fusion from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_fusion.yaml.[0m
+2026-11-20 10:32:22 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\system_with_date.yaml.[0m
+2026-11-20 10:32:22 - [32mINFO[0m - Prompt 'default_system' differs from existing but overwrite_on_diff=False. Skipping update.[0m
+2026-11-20 10:32:22 - [32mINFO[0m - Loading default prompt: vision_img from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_img.yaml.[0m
+2026-11-20 10:32:23 - [32mINFO[0m - Loading default prompt: vision_pdf from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_pdf.yaml.[0m
+2026-11-20 10:32:34 - [32mINFO[0m - Initializing text splitter with method: ChunkingStrategy.RECURSIVE[0m
+2026-11-20 10:32:34 - [31mERROR[0m - Error Error: 'extract-msg' is required to run MSGParser. Please install it using pip: pip install extract-msg while creating R2RProviders.[0m
+2026-11-20 10:32:34 - [31mERROR[0m - Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\parsers\structured\msg_parser.py", line 26, in __init__
+    import extract_msg
+ModuleNotFoundError: No module named 'extract_msg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 25, in lifespan
+    r2r_app = await create_r2r_app(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\app_entry.py", line 65, in create_r2r_app
+    return await builder.build()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 44, in build
+    providers = await self._create_providers(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\builder.py", line 116, in _create_providers
+    return await factory.create_providers(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 319, in create_providers
+    or self.create_ingestion_provider(
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\main\assembly\factory.py", line 121, in create_ingestion_provider
+    return R2RIngestionProvider(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\ingestion\r2r\base.py", line 103, in __init__
+    self._initialize_parsers()
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\ingestion\r2r\base.py", line 113, in _initialize_parsers
+    self.parsers[doc_type] = parser(
+                             ^^^^^^^
+  File "C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\parsers\structured\msg_parser.py", line 30, in __init__
+    raise ImportError(
+ImportError: Error: 'extract-msg' is required to run MSGParser. Please install it using pip: pip install extract-msg
+[0m
+2026-11-20 10:32:34 - [31mERROR[0m - Application startup failed. Exiting.[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r_db[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Started server process [44968][0m
+2026-11-20 10:37:44 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Initializing EmbeddingProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='ollama' base_model='nomic-embed-text' base_dimension=768 rerank_model=None rerank_url=None batch_size=128 prefixes=None add_title_as_prefix=True concurrent_request_limit=2 max_retries=3 initial_backoff=1 max_backoff=64.0 quantization_settings=VectorQuantizationSettings(quantization_type=<VectorQuantizationType.FP32: 'FP32'>) rerank_dimension=None rerank_transformer_type=None.[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Using Ollama API base URL: http://localhost:11434[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Initializing CompletionProvider with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='litellm' generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs={}, api_base=None, response_format=None) concurrent_request_limit=1 fast_llm='ollama/gemma2:2b' max_retries=3 initial_backoff=1.0 max_backoff=64.0[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Initializing BcryptCryptoProvider[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Initializing DatabaseProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='postgres' user=None password=None host=None port=None db_name=None project_name=None postgres_configuration_settings=None default_collection_name='Default' default_collection_description='Your default collection.' collection_summary_system_prompt='default_system' collection_summary_task_prompt='default_collection_summary' enable_fts=False batch_size=256 kg_store_path=None graph_enrichment_settings=KGEnrichmentSettings(force_kg_enrichment=False, graphrag_communities='graphrag_communities', max_summary_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), leiden_params={}) graph_creation_settings=KGCreationSettings(clustering_mode='local', graphrag_relationships_extraction_few_shot='graphrag_relationships_extraction_few_shot', graph_entity_description_prompt='graphrag_entity_description', entity_types=[], relation_types=[], chunk_merge_count=2, max_knowledge_relationships=100, max_description_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), automatic_deduplication=False) graph_search_settings=GraphSearchSettings(generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), graphrag_map_system='graphrag_map_system', graphrag_reduce_system='graphrag_reduce_system', max_community_description_length=65536, max_llm_queries_for_global_search=250, limits={}, enabled=True) limits=LimitSettings(global_per_min=300, route_per_min=None, monthly_limit=10000) route_limits={'/v3/retrieval/search': LimitSettings(global_per_min=None, route_per_min=120, monthly_limit=None), '/v3/retrieval/rag': LimitSettings(global_per_min=None, route_per_min=30, monthly_limit=None)} user_limits={}.[0m
+2026-11-20 10:37:44 - [32mINFO[0m - Connecting to Postgres via TCP/IP[0m
+2026-11-20 10:37:45 - [32mINFO[0m - Initializing `PostgresDatabaseProvider`.[0m
+2026-11-20 10:37:45 - [32mINFO[0m - Connecting with 230 connections to `asyncpg.create_pool`.[0m
+2026-11-20 10:37:51 - [32mINFO[0m - Successfully connected to Postgres database and created connection pool.[0m
+2026-11-20 10:37:53 - [32mINFO[0m - Creating table, if not exists: r2r_db.documents[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: default_summary[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: default_system[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: chunk_enrichment[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: default_rag[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: graphrag_communities[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: graphrag_reduce_system[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: rag_fusion[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: vision_img[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: graphrag_relationships_extraction_few_shot[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: hyde[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: rag_agent[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: extended_rag_agent[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: graphrag_entity_description[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: vision_pdf[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: default_collection_summary[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading saved prompt: graphrag_map_system[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading prompts from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts[0m
+2026-11-20 10:38:03 - [32mINFO[0m - Loading default prompt: chunk_enrichment from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\chunk_enrichment.yaml.[0m
+2026-11-20 10:38:05 - [32mINFO[0m - Loading default prompt: default_collection_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_collection_summary.yaml.[0m
+2026-11-20 10:38:06 - [32mINFO[0m - Loading default prompt: default_rag from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_rag.yaml.[0m
+2026-11-20 10:38:08 - [32mINFO[0m - Loading default prompt: default_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_summary.yaml.[0m
+2026-11-20 10:38:09 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_system.yaml.[0m
+2026-11-20 10:38:11 - [32mINFO[0m - Loading default prompt: extended_rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\extended_rag_agent.yaml.[0m
+2026-11-20 10:38:12 - [32mINFO[0m - Loading default prompt: graphrag_communities from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_communities.yaml.[0m
+2026-11-20 10:38:13 - [32mINFO[0m - Loading default prompt: graphrag_entity_description from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_entity_description.yaml.[0m
+2026-11-20 10:38:14 - [32mINFO[0m - Loading default prompt: graphrag_map_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_map_system.yaml.[0m
+2026-11-20 10:38:16 - [32mINFO[0m - Loading default prompt: graphrag_reduce_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_reduce_system.yaml.[0m
+2026-11-20 10:38:17 - [32mINFO[0m - Loading default prompt: graphrag_relationships_extraction_few_shot from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_relationships_extraction_few_shot.yaml.[0m
+2026-11-20 10:38:19 - [32mINFO[0m - Loading default prompt: hyde from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\hyde.yaml.[0m
+2026-11-20 10:38:20 - [32mINFO[0m - Loading default prompt: rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_agent.yaml.[0m
+2026-11-20 10:38:21 - [32mINFO[0m - Loading default prompt: rag_fusion from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_fusion.yaml.[0m
+2026-11-20 10:38:23 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\system_with_date.yaml.[0m
+2026-11-20 10:38:23 - [32mINFO[0m - Prompt 'default_system' differs from existing but overwrite_on_diff=False. Skipping update.[0m
+2026-11-20 10:38:23 - [32mINFO[0m - Loading default prompt: vision_img from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_img.yaml.[0m
+2026-11-20 10:38:24 - [32mINFO[0m - Loading default prompt: vision_pdf from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_pdf.yaml.[0m
+2026-11-20 10:38:35 - [32mINFO[0m - Initializing text splitter with method: ChunkingStrategy.RECURSIVE[0m
+2026-11-20 10:38:39 - [32mINFO[0m - R2RIngestionProvider initialized with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='r2r' excluded_parsers=['mp4'] chunking_strategy=<ChunkingStrategy.RECURSIVE: 'recursive'> chunk_size=1024 chunk_enrichment_settings=ChunkEnrichmentSettings(enable_chunk_enrichment=False, n_chunks=2, generation_config=GenerationConfig(model='openai/gpt-4o-mini', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None)) extra_parsers={'pdf': 'zerox'} audio_transcription_model='openai/whisper-1' vision_img_prompt_name='vision_img' vision_img_model='openai/gpt-4o' vision_pdf_prompt_name='vision_pdf' vision_pdf_model='openai/gpt-4o' skip_document_summary=False document_summary_system_prompt='default_system' document_summary_task_prompt='default_summary' chunks_for_document_summary=16 document_summary_model='ollama/gemma2:2b' parser_overrides={} automatic_extraction=False document_summary_max_length=100000 chunk_overlap=512 separator=None[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing ChunksRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing CollectionsRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing ConversationsRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing DocumentsRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing GraphRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing IndicesRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing LogsRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing PromptsRouter[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing RetrievalRouterV3[0m
+2026-11-20 10:38:58 - [32mINFO[0m - Initializing SystemRouter[0m
+2026-11-20 10:38:59 - [32mINFO[0m - Initializing UsersRouter[0m
+2026-11-20 10:38:59 - [32mINFO[0m - Application startup complete.[0m
+2026-11-20 10:38:59 - [32mINFO[0m - Uvicorn running on http://0.0.0.0:7272 (Press CTRL+C to quit)[0m
+2026-11-20 11:32:21 - [32mINFO[0m - Initializing text splitter with method: ChunkingStrategy.RECURSIVE[0m
+2026-11-20 11:33:46 - [32mINFO[0m - Successful ingestion for document_id: 1b5c1f2a-5ae2-56e3-b9b2-d7f72194863e, with vector count: 1[0m
+2026-11-20 11:33:55 - [32mINFO[0m - 127.0.0.1:57229 - "POST /v3/documents HTTP/1.1" [32m202[0m
+2026-11-20 11:34:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 11:34:22 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 11:34:23 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 11:35:22 - [32mINFO[0m - 127.0.0.1:52347 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 11:45:16 - [31mERROR[0m - R2RException in ingest_file_ingress: Document 1b5c1f2a-5ae2-56e3-b9b2-d7f72194863e already exists. Submit a DELETE request to `/documents/{document_id}` to delete this document and allow for re-ingestion.[0m
+2026-11-20 11:45:16 - [33mWARNING[0m - 127.0.0.1:64921 - "POST /v3/documents HTTP/1.1" [33m409[0m
+2026-11-20 11:49:17 - [32mINFO[0m - 127.0.0.1:49766 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 11:49:25 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 11:49:28 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 11:49:29 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 11:50:33 - [32mINFO[0m - 127.0.0.1:49766 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 12:05:12 - [32mINFO[0m - Shutting down[0m
+2026-11-20 12:05:12 - [32mINFO[0m - Waiting for application shutdown.[0m
+2026-11-20 12:05:12 - [32mINFO[0m - Application shutdown complete.[0m
+2026-11-20 12:05:12 - [32mINFO[0m - Finished server process [44968][0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_CONFIG_NAME: None[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_CONFIG_PATH: my_ollama.toml[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_PROJECT_NAME: r2r_db[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_POSTGRES_HOST: ep-steep-snow-bemqiuat.c-9.us-east-2.aws.neon.tech[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_POSTGRES_DBNAME: neondb[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_POSTGRES_PORT: 5432[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_POSTGRES_PASSWORD: npg_eO24NgGxLJAy[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Environment R2R_PROJECT_NAME: None[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Started server process [24616][0m
+2026-11-20 12:05:35 - [32mINFO[0m - Waiting for application startup.[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Initializing EmbeddingProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='ollama' base_model='nomic-embed-text' base_dimension=768 rerank_model=None rerank_url=None batch_size=128 prefixes=None add_title_as_prefix=True concurrent_request_limit=2 max_retries=3 initial_backoff=1 max_backoff=64.0 quantization_settings=VectorQuantizationSettings(quantization_type=<VectorQuantizationType.FP32: 'FP32'>) rerank_dimension=None rerank_transformer_type=None.[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Using Ollama API base URL: http://localhost:11434[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Initializing CompletionProvider with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='litellm' generation_config=GenerationConfig(model='ollama/gemma2:2b', temperature=0.1, top_p=1.0, max_tokens_to_sample=512, stream=False, functions=None, tools=None, add_generation_kwargs={}, api_base=None, response_format=None) concurrent_request_limit=1 fast_llm='ollama/gemma2:2b' max_retries=3 initial_backoff=1.0 max_backoff=64.0[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Initializing BcryptCryptoProvider[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Initializing DatabaseProvider with config app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='postgres' user=None password=None host=None port=None db_name=None project_name=None postgres_configuration_settings=None default_collection_name='Default' default_collection_description='Your default collection.' collection_summary_system_prompt='default_system' collection_summary_task_prompt='default_collection_summary' enable_fts=False batch_size=256 kg_store_path=None graph_enrichment_settings=KGEnrichmentSettings(force_kg_enrichment=False, graphrag_communities='graphrag_communities', max_summary_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), leiden_params={}) graph_creation_settings=KGCreationSettings(clustering_mode='local', graphrag_relationships_extraction_few_shot='graphrag_relationships_extraction_few_shot', graph_entity_description_prompt='graphrag_entity_description', entity_types=[], relation_types=[], chunk_merge_count=2, max_knowledge_relationships=100, max_description_input_length=65536, generation_config=GenerationConfig(model='ollama/qwen3:4b', temperature=0.1, top_p=1.0, max_tokens_to_sample=4096, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), automatic_deduplication=False) graph_search_settings=GraphSearchSettings(generation_config=GenerationConfig(model='ollama/gemma2:2b', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None), graphrag_map_system='graphrag_map_system', graphrag_reduce_system='graphrag_reduce_system', max_community_description_length=65536, max_llm_queries_for_global_search=250, limits={}, enabled=True) limits=LimitSettings(global_per_min=300, route_per_min=None, monthly_limit=10000) route_limits={'/v3/retrieval/search': LimitSettings(global_per_min=None, route_per_min=120, monthly_limit=None), '/v3/retrieval/rag': LimitSettings(global_per_min=None, route_per_min=30, monthly_limit=None)} user_limits={}.[0m
+2026-11-20 12:05:35 - [32mINFO[0m - Connecting to Postgres via TCP/IP[0m
+2026-11-20 12:05:36 - [32mINFO[0m - Initializing `PostgresDatabaseProvider`.[0m
+2026-11-20 12:05:36 - [32mINFO[0m - Connecting with 230 connections to `asyncpg.create_pool`.[0m
+2026-11-20 12:05:40 - [32mINFO[0m - Successfully connected to Postgres database and created connection pool.[0m
+2026-11-20 12:05:42 - [32mINFO[0m - Creating table, if not exists: r2r_db.documents[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: default_rag[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: default_summary[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: default_system[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: graphrag_communities[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: chunk_enrichment[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: hyde[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: graphrag_reduce_system[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: graphrag_relationships_extraction_few_shot[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: rag_agent[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: rag_fusion[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: vision_img[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: extended_rag_agent[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: graphrag_entity_description[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: vision_pdf[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: default_collection_summary[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading saved prompt: graphrag_map_system[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading prompts from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts[0m
+2026-11-20 12:05:52 - [32mINFO[0m - Loading default prompt: chunk_enrichment from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\chunk_enrichment.yaml.[0m
+2026-11-20 12:05:53 - [32mINFO[0m - Loading default prompt: default_collection_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_collection_summary.yaml.[0m
+2026-11-20 12:05:54 - [32mINFO[0m - Loading default prompt: default_rag from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_rag.yaml.[0m
+2026-11-20 12:05:55 - [32mINFO[0m - Loading default prompt: default_summary from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_summary.yaml.[0m
+2026-11-20 12:05:56 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\default_system.yaml.[0m
+2026-11-20 12:05:58 - [32mINFO[0m - Loading default prompt: extended_rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\extended_rag_agent.yaml.[0m
+2026-11-20 12:05:59 - [32mINFO[0m - Loading default prompt: graphrag_communities from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_communities.yaml.[0m
+2026-11-20 12:06:00 - [32mINFO[0m - Loading default prompt: graphrag_entity_description from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_entity_description.yaml.[0m
+2026-11-20 12:06:01 - [32mINFO[0m - Loading default prompt: graphrag_map_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_map_system.yaml.[0m
+2026-11-20 12:06:03 - [32mINFO[0m - Loading default prompt: graphrag_reduce_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_reduce_system.yaml.[0m
+2026-11-20 12:06:04 - [32mINFO[0m - Loading default prompt: graphrag_relationships_extraction_few_shot from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\graphrag_relationships_extraction_few_shot.yaml.[0m
+2026-11-20 12:06:05 - [32mINFO[0m - Loading default prompt: hyde from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\hyde.yaml.[0m
+2026-11-20 12:06:06 - [32mINFO[0m - Loading default prompt: rag_agent from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_agent.yaml.[0m
+2026-11-20 12:06:07 - [32mINFO[0m - Loading default prompt: rag_fusion from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\rag_fusion.yaml.[0m
+2026-11-20 12:06:08 - [32mINFO[0m - Loading default prompt: default_system from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\system_with_date.yaml.[0m
+2026-11-20 12:06:08 - [32mINFO[0m - Prompt 'default_system' differs from existing but overwrite_on_diff=False. Skipping update.[0m
+2026-11-20 12:06:08 - [32mINFO[0m - Loading default prompt: vision_img from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_img.yaml.[0m
+2026-11-20 12:06:10 - [32mINFO[0m - Loading default prompt: vision_pdf from C:\Users\Adhi Ganapathy\.conda\envs\r2r-env\Lib\site-packages\core\providers\database\prompts\vision_pdf.yaml.[0m
+2026-11-20 12:06:19 - [32mINFO[0m - Initializing text splitter with method: ChunkingStrategy.RECURSIVE[0m
+2026-11-20 12:06:22 - [32mINFO[0m - R2RIngestionProvider initialized with config: app=AppConfig(project_name=None, default_max_documents_per_user=10000, default_max_chunks_per_user=10000000, default_max_collections_per_user=5000, default_max_upload_size=2147483648, max_upload_size_by_type={'txt': 2147483648, 'md': 2147483648, 'tsv': 2147483648, 'csv': 2147483648, 'xml': 2147483648, 'html': 2147483648, 'doc': 2147483648, 'docx': 2147483648, 'ppt': 2147483648, 'pptx': 2147483648, 'xls': 2147483648, 'xlsx': 2147483648, 'odt': 2147483648, 'pdf': 2147483648, 'eml': 2147483648, 'msg': 2147483648, 'p7s': 2147483648, 'bmp': 2147483648, 'heic': 2147483648, 'jpeg': 2147483648, 'jpg': 2147483648, 'png': 2147483648, 'tiff': 2147483648, 'epub': 2147483648, 'rtf': 2147483648, 'rst': 2147483648, 'org': 2147483648}) extra_fields={} provider='r2r' excluded_parsers=['mp4'] chunking_strategy=<ChunkingStrategy.RECURSIVE: 'recursive'> chunk_size=1024 chunk_enrichment_settings=ChunkEnrichmentSettings(enable_chunk_enrichment=False, n_chunks=2, generation_config=GenerationConfig(model='openai/gpt-4o-mini', temperature=0.1, top_p=1.0, max_tokens_to_sample=1024, stream=False, functions=None, tools=None, add_generation_kwargs=None, api_base=None, response_format=None)) extra_parsers={'pdf': 'zerox'} audio_transcription_model='openai/whisper-1' vision_img_prompt_name='vision_img' vision_img_model='openai/gpt-4o' vision_pdf_prompt_name='vision_pdf' vision_pdf_model='openai/gpt-4o' skip_document_summary=False document_summary_system_prompt='default_system' document_summary_task_prompt='default_summary' chunks_for_document_summary=16 document_summary_model='ollama/gemma2:2b' parser_overrides={} automatic_extraction=False document_summary_max_length=100000 chunk_overlap=512 separator=None[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Default admin user already exists.[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing ChunksRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing CollectionsRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing ConversationsRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing DocumentsRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing GraphRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing IndicesRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing LogsRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing PromptsRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing RetrievalRouterV3[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing SystemRouter[0m
+2026-11-20 12:06:25 - [32mINFO[0m - Initializing UsersRouter[0m
+2026-11-20 12:06:26 - [32mINFO[0m - Application startup complete.[0m
+2026-11-20 12:06:26 - [32mINFO[0m - Uvicorn running on http://0.0.0.0:7272 (Press CTRL+C to quit)[0m
+2026-11-20 12:09:33 - [32mINFO[0m - 127.0.0.1:61381 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 12:09:41 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 12:09:42 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 12:09:43 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 12:09:57 - [32mINFO[0m - 127.0.0.1:61381 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 12:14:08 - [32mINFO[0m - 127.0.0.1:59249 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 12:14:12 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 12:14:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 12:14:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 12:14:21 - [32mINFO[0m - 127.0.0.1:59249 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:24:59 - [32mINFO[0m - Running the agnet with conversation_id = 7fd14c5f-67eb-469b-97fe-af12b0ad1fa1 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 16:25:08 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 16:25:30 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise refund window"}, tool_id: None[0m
+2026-11-20 16:25:32 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:25:34 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:25:35 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:25:53 - [32mINFO[0m - 127.0.0.1:65401 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 16:25:59 - [32mINFO[0m - Running the agnet with conversation_id = 7fd14c5f-67eb-469b-97fe-af12b0ad1fa1 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 16:26:07 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 16:26:11 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-20 16:26:11 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:24 - [32mINFO[0m - 127.0.0.1:65401 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 16:26:28 - [32mINFO[0m - 127.0.0.1:65401 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 16:26:32 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:33 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:35 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:43 - [32mINFO[0m - 127.0.0.1:65401 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:26:56 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:57 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:26:59 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:27:03 - [32mINFO[0m - 127.0.0.1:65401 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:27:06 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:27:07 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:27:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:27:13 - [32mINFO[0m - 127.0.0.1:65401 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:28:11 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:28:12 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:28:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:28:19 - [32mINFO[0m - 127.0.0.1:64222 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:28:28 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:28:30 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:28:31 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:28:37 - [32mINFO[0m - 127.0.0.1:64222 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:35:55 - [32mINFO[0m - Running the agnet with conversation_id = 5f9bea20-e7e2-4099-b372-7d6057dacdf9 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 16:36:02 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 16:36:16 - [32mINFO[0m - Calling function: search, args: {"query": "refund window enterprise plans"}, tool_id: None[0m
+2026-11-20 16:36:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:36:25 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:36:26 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:36:43 - [32mINFO[0m - 127.0.0.1:53726 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 16:36:48 - [32mINFO[0m - Running the agnet with conversation_id = 5f9bea20-e7e2-4099-b372-7d6057dacdf9 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 16:36:55 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 16:36:59 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-20 16:37:00 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:01 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:03 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:09 - [32mINFO[0m - 127.0.0.1:53726 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 16:37:14 - [32mINFO[0m - 127.0.0.1:53726 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 16:37:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:25 - [32mINFO[0m - 127.0.0.1:53726 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:37:33 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:35 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:36 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:41 - [32mINFO[0m - 127.0.0.1:53726 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:37:44 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:46 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:37:52 - [32mINFO[0m - 127.0.0.1:53726 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:38:00 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:38:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:38:03 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:38:08 - [32mINFO[0m - 127.0.0.1:53726 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:38:12 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:38:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:38:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:38:20 - [32mINFO[0m - 127.0.0.1:53726 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:57:59 - [32mINFO[0m - Running the agnet with conversation_id = d4d329ae-b291-4d58-8770-8503be95e454 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 16:58:06 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 16:58:20 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise plans refund window"}, tool_id: None[0m
+2026-11-20 16:58:22 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:58:23 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:58:25 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:58:41 - [32mINFO[0m - 127.0.0.1:60280 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 16:58:48 - [32mINFO[0m - Running the agnet with conversation_id = d4d329ae-b291-4d58-8770-8503be95e454 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 16:58:56 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 16:59:00 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-20 16:59:00 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:04 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:13 - [32mINFO[0m - 127.0.0.1:60280 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 16:59:17 - [32mINFO[0m - 127.0.0.1:60280 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 16:59:21 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:22 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:23 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:28 - [32mINFO[0m - 127.0.0.1:60280 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:59:36 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:37 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:39 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:43 - [32mINFO[0m - 127.0.0.1:60280 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 16:59:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:49 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:50 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 16:59:55 - [32mINFO[0m - 127.0.0.1:60280 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:00:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:00:04 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:00:05 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:00:10 - [32mINFO[0m - 127.0.0.1:60280 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:00:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:00:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:00:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:00:22 - [32mINFO[0m - 127.0.0.1:60280 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:13:49 - [32mINFO[0m - Running the agnet with conversation_id = 961e22ca-7251-4d8f-99b7-de4ab88bccc7 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 17:13:56 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 17:14:09 - [32mINFO[0m - Calling function: search, args: {"query": "refund window enterprise plans"}, tool_id: None[0m
+2026-11-20 17:14:11 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:14:12 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:14:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:14:29 - [32mINFO[0m - 127.0.0.1:59825 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 17:14:34 - [32mINFO[0m - Running the agnet with conversation_id = 961e22ca-7251-4d8f-99b7-de4ab88bccc7 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 17:14:40 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 17:14:44 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-20 17:14:44 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:14:45 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:14:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:14:53 - [32mINFO[0m - 127.0.0.1:59825 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 17:14:57 - [32mINFO[0m - 127.0.0.1:59825 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 17:15:00 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:01 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:07 - [32mINFO[0m - 127.0.0.1:59825 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:15:16 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:23 - [32mINFO[0m - 127.0.0.1:54962 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:15:32 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:33 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:34 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:15:39 - [32mINFO[0m - 127.0.0.1:54986 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:16:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:16:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:16:16 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:16:20 - [32mINFO[0m - 127.0.0.1:56855 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:16:26 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:16:28 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:16:29 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:16:34 - [32mINFO[0m - 127.0.0.1:56855 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:36:47 - [32mINFO[0m - Running the agnet with conversation_id = 168da3aa-ffae-4f37-9c2e-d591ae1ce368 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 17:36:56 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 17:37:12 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise refund window"}, tool_id: None[0m
+2026-11-20 17:37:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:37:16 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:37:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:37:31 - [32mINFO[0m - 127.0.0.1:64098 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 17:37:37 - [32mINFO[0m - Running the agnet with conversation_id = 168da3aa-ffae-4f37-9c2e-d591ae1ce368 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-20 17:37:43 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-20.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-20 17:37:46 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-20 17:37:46 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:37:48 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:37:49 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:37:55 - [32mINFO[0m - 127.0.0.1:64098 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-20 17:37:58 - [32mINFO[0m - 127.0.0.1:64098 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-20 17:38:01 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:04 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:11 - [32mINFO[0m - 127.0.0.1:64098 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:38:24 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:25 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:26 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:30 - [32mINFO[0m - 127.0.0.1:51342 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:38:41 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:42 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:43 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:38:47 - [32mINFO[0m - 127.0.0.1:59514 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:39:07 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:39:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:39:09 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:39:14 - [32mINFO[0m - 127.0.0.1:56742 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-20 17:39:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:39:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:39:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-20 17:39:25 - [32mINFO[0m - 127.0.0.1:56742 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 02:42:25 - [32mINFO[0m - Running the agnet with conversation_id = 59612560-b0aa-49d4-86a1-14f496b58243 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 02:42:33 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 02:42:50 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise refund window"}, tool_id: None[0m
+2026-11-21 02:42:52 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:42:53 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:42:55 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:43:09 - [32mINFO[0m - 127.0.0.1:63178 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 02:43:15 - [32mINFO[0m - Running the agnet with conversation_id = 59612560-b0aa-49d4-86a1-14f496b58243 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 02:43:21 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 02:43:24 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 02:43:25 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:43:26 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:43:27 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:43:33 - [32mINFO[0m - 127.0.0.1:63178 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 02:43:41 - [32mINFO[0m - 127.0.0.1:63178 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 02:43:43 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:43:45 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:43:46 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:43:54 - [32mINFO[0m - 127.0.0.1:63178 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 02:44:06 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:44:07 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:44:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:44:12 - [32mINFO[0m - 127.0.0.1:57264 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 02:44:21 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:44:22 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:44:23 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:44:27 - [32mINFO[0m - 127.0.0.1:55148 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 02:45:03 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:45:04 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:45:05 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:45:10 - [32mINFO[0m - 127.0.0.1:55176 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 02:45:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:45:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:45:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 02:45:20 - [32mINFO[0m - 127.0.0.1:55176 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:34:49 - [32mINFO[0m - Running the agnet with conversation_id = f180e353-c35d-4813-beac-9af6c135e426 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:34:58 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:35:12 - [32mINFO[0m - Calling function: search, args: {"query": "refund window enterprise plans"}, tool_id: None[0m
+2026-11-21 04:35:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:35:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:35:21 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:35:35 - [32mINFO[0m - 127.0.0.1:64764 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:35:41 - [32mINFO[0m - Running the agnet with conversation_id = f180e353-c35d-4813-beac-9af6c135e426 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:35:48 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:35:51 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 04:35:52 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:35:53 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:35:54 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:35:59 - [32mINFO[0m - 127.0.0.1:64764 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:36:07 - [32mINFO[0m - 127.0.0.1:64764 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 04:36:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:36:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:36:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:36:27 - [32mINFO[0m - 127.0.0.1:63563 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:36:31 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:36:32 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:36:34 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:36:39 - [32mINFO[0m - 127.0.0.1:63563 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:40:08 - [32mINFO[0m - Running the agnet with conversation_id = a2fce2f6-96c6-4a9c-ba19-6bd22e3838d7 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:40:14 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:40:18 - [32mINFO[0m - Calling function: search, args: {"query": "refund window enterprise plans"}, tool_id: None[0m
+2026-11-21 04:40:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:40:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:40:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:40:32 - [32mINFO[0m - 127.0.0.1:57868 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:40:38 - [32mINFO[0m - Running the agnet with conversation_id = a2fce2f6-96c6-4a9c-ba19-6bd22e3838d7 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:40:43 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:40:47 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 04:40:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:40:53 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:40:55 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:41:03 - [32mINFO[0m - 127.0.0.1:57868 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:41:12 - [32mINFO[0m - 127.0.0.1:57868 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 04:41:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:41:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:41:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:41:25 - [32mINFO[0m - 127.0.0.1:57868 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:41:29 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:41:30 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:41:31 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:41:36 - [32mINFO[0m - 127.0.0.1:57868 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:48:11 - [32mINFO[0m - Running the agnet with conversation_id = b8541339-c67f-45bf-bff2-f2896e5f6955 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:48:18 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:48:30 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise refund window"}, tool_id: None[0m
+2026-11-21 04:48:32 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:48:33 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:48:35 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:48:50 - [32mINFO[0m - 127.0.0.1:53572 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:48:56 - [32mINFO[0m - Running the agnet with conversation_id = b8541339-c67f-45bf-bff2-f2896e5f6955 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:49:02 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:49:06 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 04:49:06 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:09 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:15 - [32mINFO[0m - 127.0.0.1:53572 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:49:22 - [32mINFO[0m - 127.0.0.1:53572 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 04:49:28 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:29 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:30 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:35 - [32mINFO[0m - 127.0.0.1:53572 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:49:39 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:40 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:41 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:49:46 - [32mINFO[0m - 127.0.0.1:53572 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:53:57 - [32mINFO[0m - Running the agnet with conversation_id = c24f3292-3006-4155-8909-f6b50ae75c21 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:54:04 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:54:07 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise refund window"}, tool_id: None[0m
+2026-11-21 04:54:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:54:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:54:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:54:29 - [32mINFO[0m - 127.0.0.1:50215 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:54:34 - [32mINFO[0m - Running the agnet with conversation_id = c24f3292-3006-4155-8909-f6b50ae75c21 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 04:54:41 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 04:54:44 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 04:54:44 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:54:45 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:54:48 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:54:56 - [32mINFO[0m - 127.0.0.1:50215 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 04:55:03 - [32mINFO[0m - 127.0.0.1:50215 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 04:55:05 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:55:07 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:55:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:55:13 - [32mINFO[0m - 127.0.0.1:50215 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:55:34 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:55:35 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:55:36 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:55:40 - [32mINFO[0m - 127.0.0.1:61863 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:56:46 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:56:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:56:48 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:56:53 - [32mINFO[0m - 127.0.0.1:58949 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:58:05 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:58:07 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:58:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:58:13 - [32mINFO[0m - 127.0.0.1:54746 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 04:58:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:58:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:58:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 04:58:25 - [32mINFO[0m - 127.0.0.1:54746 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 06:04:40 - [32mINFO[0m - Running the agnet with conversation_id = 62baf235-94ec-41f1-8b43-dcd3d8e3bd3f and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 06:04:49 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 06:05:04 - [32mINFO[0m - Calling function: search, args: {"query": "refund window enterprise plans"}, tool_id: None[0m
+2026-11-21 06:05:06 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:05:12 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:05:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:05:29 - [32mINFO[0m - 127.0.0.1:63633 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 06:05:36 - [32mINFO[0m - Running the agnet with conversation_id = 62baf235-94ec-41f1-8b43-dcd3d8e3bd3f and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 06:05:43 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 06:05:47 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 06:05:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:05:49 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:05:50 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:05:56 - [32mINFO[0m - 127.0.0.1:63633 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 06:06:08 - [32mINFO[0m - 127.0.0.1:51136 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 06:06:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:06:16 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:06:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:07:07 - [32mINFO[0m - Running the agnet with conversation_id = b7a8bac4-c785-49db-9867-753239cee2d5 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 06:07:13 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 06:07:17 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise refund window"}, tool_id: None[0m
+2026-11-21 06:07:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:07:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:07:21 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:07:32 - [32mINFO[0m - 127.0.0.1:58789 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 06:07:38 - [32mINFO[0m - Running the agnet with conversation_id = b7a8bac4-c785-49db-9867-753239cee2d5 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 06:07:45 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 06:07:49 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 06:07:50 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:07:51 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:07:52 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:07:59 - [32mINFO[0m - 127.0.0.1:58789 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 06:08:10 - [32mINFO[0m - 127.0.0.1:58844 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 06:08:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:08:18 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:08:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:08:25 - [32mINFO[0m - 127.0.0.1:58844 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 06:08:30 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:08:31 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:08:32 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:08:38 - [32mINFO[0m - 127.0.0.1:58844 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 06:16:15 - [32mINFO[0m - Running the agnet with conversation_id = e1893348-3454-4131-af2b-83b73deaa4e1 and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 06:16:23 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 06:16:36 - [32mINFO[0m - Calling function: search, args: {"query": "refund window enterprise plans"}, tool_id: None[0m
+2026-11-21 06:16:38 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:16:40 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:16:42 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:16:58 - [32mINFO[0m - 127.0.0.1:64380 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 06:17:04 - [32mINFO[0m - Running the agnet with conversation_id = e1893348-3454-4131-af2b-83b73deaa4e1 and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 06:17:11 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 06:17:15 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 06:17:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:17:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:17:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:17:27 - [32mINFO[0m - 127.0.0.1:64380 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 06:17:41 - [32mINFO[0m - 127.0.0.1:55143 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 06:17:46 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:17:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:17:48 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:17:54 - [32mINFO[0m - 127.0.0.1:55143 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 06:18:42 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:18:43 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:18:44 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:18:49 - [32mINFO[0m - 127.0.0.1:65517 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 06:20:00 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:20:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:20:03 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:20:08 - [32mINFO[0m - 127.0.0.1:64325 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 06:21:42 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:21:46 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:21:47 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:21:53 - [32mINFO[0m - 127.0.0.1:61951 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 06:21:57 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:21:58 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:22:00 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 06:22:06 - [32mINFO[0m - 127.0.0.1:61951 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 12:51:35 - [32mINFO[0m - Running the agnet with conversation_id = 865d6abb-776e-446f-8124-4ca53c6e108c and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 12:51:42 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 12:51:56 - [32mINFO[0m - Calling function: search, args: {"query": "refund window enterprise plans"}, tool_id: None[0m
+2026-11-21 12:51:57 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:51:59 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:52:01 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:52:15 - [32mINFO[0m - 127.0.0.1:55805 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 12:52:20 - [32mINFO[0m - Running the agnet with conversation_id = 865d6abb-776e-446f-8124-4ca53c6e108c and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 12:52:27 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 12:52:30 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 12:52:30 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:52:32 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:52:33 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:52:39 - [32mINFO[0m - 127.0.0.1:55805 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 12:52:51 - [32mINFO[0m - 127.0.0.1:49700 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 12:52:53 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:52:55 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:52:56 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:53:03 - [32mINFO[0m - 127.0.0.1:49700 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 12:53:49 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:53:50 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:53:52 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:53:56 - [32mINFO[0m - 127.0.0.1:58969 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 12:55:19 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:55:20 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:55:21 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:55:26 - [32mINFO[0m - 127.0.0.1:56893 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 12:56:58 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:57:00 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:57:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:57:07 - [32mINFO[0m - 127.0.0.1:60193 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 12:57:10 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:57:12 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:57:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 12:57:18 - [32mINFO[0m - 127.0.0.1:60193 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 13:30:45 - [32mINFO[0m - Running the agnet with conversation_id = cef80688-76f2-41e1-ac5b-8411b42d055f and message = role='user' content='What is the refund window for Enterprise plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 13:30:52 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 13:31:11 - [32mINFO[0m - Calling function: search, args: {"query": "Enterprise refund window"}, tool_id: None[0m
+2026-11-21 13:31:13 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:31:14 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:31:16 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:31:32 - [32mINFO[0m - 127.0.0.1:50550 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 13:31:39 - [32mINFO[0m - Running the agnet with conversation_id = cef80688-76f2-41e1-ac5b-8411b42d055f and message = role='user' content='And what about Standard Monthly plans?' name=None function_call=None tool_calls=None tool_call_id=None[0m
+2026-11-21 13:31:47 - [32mINFO[0m - Running agent with system prompt = ### You are a helpful agent that can search for information, the date is 2026-11-21.
+
+The response should contain line-item attributions to relevant search results, and be as informative if possible. Note that you will only be able to load 32768 tokens of context at a time, if the context surpasses this then it will be truncated. If possible, set filters which will reduce the context returned to only that which is specific, by means of '$eq' or '$overlap' filters.
+
+Search rarely exceeds the context window, while getting raw context can depending on the user data shown below. IF YOU CAN FETCH THE RAW CONTEXT, THEN DO SO.
+
+The available user documents and collections are shown below:
+<= Documents =>
+No documents found.
+
+<= Collections =>
+[1] Name: Default (ID: 122fdf6a-e116-546b-a8f6-e4cb2e2c0a09, docs: 1)
+
+If no relevant results are found, then state that no results were found. If no obvious question is present given the available tools and context, then do not carry out a search, and instead ask for clarification.
+
+REMINDER - Use line item references to like [1], [2], ... refer to specifically numbered items in the provided context.
+[0m
+2026-11-21 13:31:51 - [32mINFO[0m - Calling function: search, args: {"query": "refund window Standard Monthly plans"}, tool_id: None[0m
+2026-11-21 13:31:51 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:31:53 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:31:54 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:32:00 - [32mINFO[0m - 127.0.0.1:50550 - "POST /v3/retrieval/agent HTTP/1.1" [32m200[0m
+2026-11-21 13:32:11 - [32mINFO[0m - 127.0.0.1:55315 - "GET /v3/documents?offset=0&limit=100 HTTP/1.1" [32m200[0m
+2026-11-21 13:32:15 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:32:16 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:32:17 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:32:23 - [32mINFO[0m - 127.0.0.1:55315 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 13:33:06 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:33:08 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:33:09 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:33:14 - [32mINFO[0m - 127.0.0.1:53595 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 13:34:39 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:34:41 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:34:42 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:34:47 - [32mINFO[0m - 127.0.0.1:63423 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 13:35:49 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:35:50 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:35:51 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:35:56 - [32mINFO[0m - 127.0.0.1:61974 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
+2026-11-21 13:36:01 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:36:02 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:36:03 - [33mWARNING[0m - Hybrid and fulltext search not supported for graph search, ignoring.[0m
+2026-11-21 13:36:09 - [32mINFO[0m - 127.0.0.1:61974 - "POST /v3/retrieval/rag HTTP/1.1" [32m200[0m
