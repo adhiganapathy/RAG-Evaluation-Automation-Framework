@@ -1,5 +1,11 @@
 # GenAI RAG & Agent Evaluation Automation Framework
 
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-Data--Driven_POM-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![DeepEval](https://img.shields.io/badge/DeepEval-LLM--as--a--Judge-6E40C9?style=flat-square)
+![Presidio](https://img.shields.io/badge/Microsoft_Presidio-PII_Guardrails-0078D4?style=flat-square)
+![R2R](https://img.shields.io/badge/SUT-R2R_%2B_pgvector_%2B_Ollama-10B981?style=flat-square)
+
 > **A modular, Data-Driven Page Object Model (POM) test automation framework for validating Retrieval-Augmented Generation (RAG) pipelines, stateful multi-turn conversational agents, red-team security guardrails, and response SLA budgets.**
 
 ---
